@@ -1,0 +1,127 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<!-- Topic: como_crio_novos_registos_ - theme: (Default) -->
+	<title>Como crio novos registos?</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="generator" content="HelpMaker Script Builder 2.2.4">
+	<meta name="author" content="TriedeTi - ">
+
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/base-html.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type="text/javascript" src="js/hm-search-items.js"></script>
+	<script type="text/javascript" src="js/hm-search.js"></script>
+
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/persist.js"></script>
+	<script type="text/javascript" src="js/hm-tree.js"></script>
+	<script language="JavaScript">
+		var store = new Persist.Store('hm tree store');
+		
+		$(document).ready(function() {
+			
+			init(store, "#hmtree");
+			
+			$("#hmtree .hm-hit").on("click", function(event) {
+				var li = event.target.parentElement;
+				toggle(store, $("ul", li), 100);
+			});
+
+			$("#hmtree a").on("click", function(event) {
+				setSelected(store, $(this).parent());
+//				event.preventDefault();
+//				event.stopPropagation();
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<div class="hm-title">
+		<p>FAQs</p>
+	</div>
+	<div class="hm-search">
+		<form autocomplete="off" method="get" action="javascript:void(0)"
+			onsubmit="search(this, '#hm-body-content', $('#srchval').val(), 'Resultados para', 'Não foram encontrados resultados.', 'Fechar'); return false;">
+			<input class="hm-header-input" type="text" size="20" id="srchval" autocomplete="off">
+			<input class="hm-header-button" type="submit" value="Buscar">
+		</form>
+	</div>
+	<div class="hm-tree">
+	<div id="hmtree">
+			<ul>
+			<li class="hm-leaf"><a href="como_crio_temas_de_informacao_.html" title="Como crio temas de informação?"><span class="hm-icon"></span>Como crio temas de informação?</a>
+			</li>
+			<li class="hm-leaf"><a href="como_adiciono_novos_campos_as_camadas_de_informacao_.html" title="Como adiciono novos atributos aos temas de informação?"><span class="hm-icon"></span>Como adiciono novos atributos aos temas de informação?</a>
+			</li>
+			<li class="hm-leaf"><a href="como_crio_novos_registos_.html" title="Como crio novos registos?"><span class="hm-icon"></span>Como crio novos registos?</a>
+			</li>
+			<li class="hm-leaf"><a href="como_importo_informacao_para_as_camadas_.html" title="Como importo informação para os temas?"><span class="hm-icon"></span>Como importo informação para os temas?</a>
+			</li>
+			<li class="hm-leaf"><a href="como_consulto_e_edito_informacao_no_qgis_.html" title="Como consulto e edito informação no QGIS?"><span class="hm-icon"></span>Como consulto e edito informação no QGIS?</a>
+			</li>
+			<li class="hm-leaf"><a href="como_abro_a_tabela_de_atributos_de_um_tema_.html" title="Como abro a tabela de atributos de um tema?"><span class="hm-icon"></span>Como abro a tabela de atributos de um tema?</a>
+			</li>
+			<li class="hm-leaf"><a href="como_ativo_um_mapa_tematico_.html" title="Como ativo um mapa temático?"><span class="hm-icon"></span>Como ativo um mapa temático?</a>
+			</li>
+			<li class="hm-leaf"><a href="como_consulto_dados_estatisticos_de_um_tema_.html" title="Como consulto dados estatísticos de um tema?"><span class="hm-icon"></span>Como consulto dados estatísticos de um tema?</a>
+			</li>
+			<li class="hm-leaf"><a href="como_imprimo_fichas_de_caracterizacao_dos_elementos_.html" title="Como imprimo fichas de caracterização dos elementos?"><span class="hm-icon"></span>Como imprimo fichas de caracterização dos elementos?</a>
+			</li>
+			<li class="hm-leaf"><a href="como_imprimo_mapas_com_os_elementos_ativos_.html" title="Como imprimo mapas com os elementos ativos?"><span class="hm-icon"></span>Como imprimo mapas com os elementos ativos?</a>
+			</li>
+			<li class="hm-leaf"><a href="novo_topico_001.html" title="Como efetuo pesquisas?"><span class="hm-icon"></span>Como efetuo pesquisas?</a>
+			</li>
+			<li class="hm-leaf"><a href="como_exporto_informacao_geografica_.html" title="Como exporto informação geográfica?"><span class="hm-icon"></span>Como exporto informação geográfica?</a>
+			</li>
+			<li class="hm-leaf"><a href="que_operacoes_de_geoprocessamento_estao_disponiveis_.html" title="Que operações de geoprocessamento estão disponíveis?"><span class="hm-icon"></span>Que operações de geoprocessamento estão disponíveis?</a>
+			</li>
+			<li class="hm-leaf"><a href="como_crio_aplicacoes_publicas_.html" title="Como crio aplicações públicas?"><span class="hm-icon"></span>Como crio aplicações públicas?</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+	<div class="hm-body" id="hm-body-content"><h2>Como crio novos registos?</h2><div class="hm-contents"><p>A cria&ccedil;&atilde;o de novos registos/elementos pode ser efetuada por importa&ccedil;&atilde;o de shapefile, de GeoJSON, por georreferencia&ccedil;&atilde;o direta na aplica&ccedil;&atilde;o ou atrav&eacute;s do QGIS, op&ccedil;&otilde;es estas representadas na imagem seguinte e descritas abaixo:</p>
+	<p><img src="images/clip_106.png" alt="clip_106.png" title="clip_106.png"></p>
+<h3>Importar shapefile</h3>
+<p>Consultar sec&ccedil;&atilde;o "<a href="como_importo_informacao_para_as_camadas_.html" title="Como importo informa&ccedil;&atilde;o para os temas?">Como importo informa&ccedil;&atilde;o para os temas</a>".</p>
+<h3>Importar GeoJSON</h3>
+<p>Consultar sec&ccedil;&atilde;o "<a href="como_importo_informacao_para_as_camadas_.html" title="Como importo informa&ccedil;&atilde;o para os temas?">Como importo informa&ccedil;&atilde;o para os temas</a>".</p>
+<h3>Adicionar novos elementos diretamente na aplica&ccedil;&atilde;o</h3>
+<p>A cria&ccedil;&atilde;o de elementos diretamente na aplica&ccedil;&atilde;o &eacute; efetuada atrav&eacute;s da op&ccedil;&atilde;o "Editar &gt; Editar geometria", bot&atilde;o “adicionar”, seguindo os passos da figura.</p>
+	<p><img src="images/clip_064.png" alt="clip_064.png" title="clip_064.png"></p>
+<h3>Adicionar novos elementos atrav&eacute;s do QGIS</h3>
+<p>A aplica&ccedil;&atilde;o permite criar elementos com o aux&iacute;lio do QGIS, atrav&eacute;s da op&ccedil;&atilde;o "Editar &gt; Editar tema de informa&ccedil;&atilde;o no QGIS".</p>
+<div class="box note"><span class="box-image"></span>Link para fazer <i>download</i> do QGIS: <i>https://qgis.org/pt_PT/site/forusers/download.html</i></div>
+<h3>Definir coletores de dados - Copiar elementos de outros sistemas/bases de dados</h3>
+<p>A cria&ccedil;&atilde;o de elementos pode ainda ser feita por c&oacute;pia de informa&ccedil;&atilde;o espacial “residente” noutros sistemas interoper&aacute;veis. Para tal, &eacute; necess&aacute;rio a configura&ccedil;&atilde;o dos coletores de dados que ir&atilde;o copiar essa mesma informa&ccedil;&atilde;o para os temas da aplica&ccedil;&atilde;o, atrav&eacute;s da janela "Temas de Informa&ccedil;&atilde;o", no bot&atilde;o "Coletores de dados".</p>
+	<p><img src="images/clip_065.png" alt="clip_065.png" title="clip_065.png"></p>
+<h4>CONFIGURA&Ccedil;&Atilde;O DE UM COLETOR DE DADOS</h4>
+<ul>
+	<li>1. Na janela "Coletores de dados", clicar no bot&atilde;o "criar nova entrada":</li>
+</ul>
+<p><img src="images/clip_066.png" alt="clip_066.png" title="clip_066.png"></p>
+<ul>
+	<li> 2. Configurar o coletor:</li>
+</ul>
+<p><img src="images/clip_108.png" alt="clip_108.png" title="clip_108.png"></p>
+	<p>A aplica&ccedil;&atilde;o disp&otilde;e de uma ajuda para configura&ccedil;&atilde;o do servi&ccedil;o, atrav&eacute;s do link "carregue aqui".</p>
+<ul>
+	<li>3. Mapear os campos do tema da aplica&ccedil;&atilde;o com os da fonte externa:</li>
+</ul>
+<p><img src="images/clip_068.png" alt="clip_068.png" title="clip_068.png"></p>
+<div class="box note"><span class="box-image"></span>Ap&oacute;s configurado o coletor, os dados do tema da aplica&ccedil;&atilde;o ser&atilde;o atualizados com a periodicidade definida.</div>
+<h4>COLETAR OS DADOS MANUALMENTE:</h4>
+<p>Todos os coletores de dados podem ser coletados manualmente. Para tal, &eacute; necess&aacute;rio clicar no bot&atilde;o "Coletar dados" e aguardar que o processamento termine.</p>
+	<p><img src="images/clip_071.png" alt="clip_071.png" title="clip_071.png"></p>
+	<p> </p>
+<h4>CONSULTAR O HIST&Oacute;RICO DAS EXECU&Ccedil;&Otilde;ES DOS COLETORES:</h4>
+<p>As opera&ccedil;&otilde;es efetuadas pelos coletores podem ser consultadas na janela "Hist&oacute;rico do coletor".</p>
+	<p><img src="images/clip_070.png" alt="clip_070.png" title="clip_070.png"></p>
+</div><div style="text-align: center; margin: 1em 0 1em 0; padding: 8px 0 0 8px; border-top: 2px solid #bbb;"><p style="display: inline !important; font-family: Arial; font-size: 8.25pt; line-height: 12pt; color: #202020; margin: 0;"><b>Este documento foi gerado pelo <a href="http://www.helpmaker.com.br/">HelpMaker Light</a> &mdash; Copyright © Hypervisual 2008-2017.</b></p></div></div>
+</body>
+</html>

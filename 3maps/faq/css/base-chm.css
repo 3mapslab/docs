@@ -1,0 +1,17 @@
+/*
+ * HelpMaker CHM styles
+ */
+
+/*------------------------------------------------------ Main container */
+
+.hm-contents {
+	padding: 10px;
+}
+
+.hm-body {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
